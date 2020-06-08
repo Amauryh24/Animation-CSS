@@ -1,15 +1,17 @@
 body {
   background-color: #424242;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   color: white;
   font-size: 18px;
+  line-height: 0px;
 }
 
-ul {
+ul#drill {
   padding: 24px;
   display: flex;
   justify-content: space-around;
 }
-ul li {
+ul#drill li {
   border: 5px solid white;
   padding: 1.5em;
   width: 200px;
@@ -17,14 +19,14 @@ ul li {
   transition-duration: 1s;
 }
 
-ul li:first-child:hover {
+ul#drill li:first-child:hover {
   cursor: pointer;
   background-color: white;
   color: #424242;
   transition-duration: 1s;
 }
 
-ul li:nth-child(2):hover {
+ul#drill li:nth-child(2):hover {
   cursor: pointer;
   background-color: white;
   color: #424242;
@@ -32,10 +34,55 @@ ul li:nth-child(2):hover {
   transform: scale(1.2);
 }
 
-ul li:nth-child(3):hover {
+ul#drill li:nth-child(3):hover {
   cursor: pointer;
   background-color: white;
   color: #424242;
   transition-duration: 1s;
   transform: translate(100px);
+}
+
+ul#nav {
+  width: 400px;
+}
+ul#nav li {
+  display: flex;
+  align-items: center;
+}
+ul#nav li:first-child img {
+  background-color: #262626;
+}
+ul#nav li img {
+  width: 10%;
+  background-color: #4c4b4b;
+  padding: 1em;
+  transition: 1s;
+  z-index: 15;
+}
+
+ul#nav li a {
+  background-color: #262626;
+  display: inline-block;
+  width: 100px;
+  padding: 38px;
+  transform: translate(-176px, 0px);
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+  z-index: 10;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+ul#nav li img:hover {
+  cursor: pointer;
+  background-color: white;
+  transition: 1s;
+}
+
+ul#nav li:hover a {
+  opacity: 1;
+  background-color: red;
+  transform: translate(0px, 0px);
+  transition: 1s;
 }
