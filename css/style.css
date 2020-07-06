@@ -203,3 +203,25 @@ section #card div:nth-child(3) {
 #card ul li {
   padding: 0.5em;
 }
+
+@media all and (max-width: 768px) {
+  h1 {
+    text-align: center;
+    font-size: 1em;
+    padding: 1em;
+  }
+  ul#drill {
+    width: 90%;
+    margin: 0 auto;
+    padding: 24px;
+    display: flex;
+    justify-content: center;
+  }
+  ul#drill li {
+    border: 5px solid white;
+    padding: 1em;
+    width: 100px;
+    text-align: center;
+    transition-duration: 1s;
+  }
+}
